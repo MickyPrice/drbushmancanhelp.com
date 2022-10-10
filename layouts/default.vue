@@ -11,6 +11,17 @@
         </main>
       </div>
     </Transition>
+
+    <div id="preload" class="hidden">
+      <img src="@/assets/img/dr/bandanna_mouth_closed.png" alt="Dr. Bushman">
+      <img src="@/assets/img/dr/bandanna_mouth_open.png" alt="Dr. Bushman">
+      <img src="@/assets/img/dr/clipboard_mouth_closed.png" alt="Dr. Bushman">
+      <img src="@/assets/img/dr/clipboard_mouth_open.png" alt="Dr. Bushman">
+      <img src="@/assets/img/dr/wave_up.png" alt="Dr. Bushman">
+      <img src="@/assets/img/dr/wave_down.png" alt="Dr. Bushman">
+      <img src="@/assets/img/face_is_longer_than_it_should_be.png" alt="Dr. Bushman Can Help">
+    </div>
+
   </div>
 </template>
 

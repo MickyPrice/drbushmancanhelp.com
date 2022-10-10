@@ -1,7 +1,7 @@
 <template>
   <div>
-    <img v-if="state" class="w-full" src="@/assets/img/dr/clipboard_mouth_closed.png" alt="Dr. Bushman">
-    <img v-if="!state" class="w-full" src="@/assets/img/dr/clipboard_mouth_open.png" alt="Dr. Bushman">
+    <img v-if="state" class="w-full aspect-[59/50]" src="@/assets/img/dr/clipboard_mouth_closed.png" alt="Dr. Bushman">
+    <img v-if="!state" class="w-full aspect-[59/50]" src="@/assets/img/dr/clipboard_mouth_open.png" alt="Dr. Bushman">
   </div>
 </template>
 
