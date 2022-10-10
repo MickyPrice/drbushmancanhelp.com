@@ -1,0 +1,13 @@
+@tailwind base;
+
+@font-face {
+  font-family: breakfast_noodles;
+  src: url('/fonts/Breakfast_Noodles.otf');
+}
+
+* {
+  @apply font-noodles select-none;
+}
+
+@tailwind components;
+@tailwind utilities;
