@@ -11,6 +11,9 @@ module.exports = {
     extend: {
       fontFamily: {
         noodles: ['breakfast_noodles', 'serif']
+      },
+      screens: {
+        'desktop': '1000px'
       }
     },
   },

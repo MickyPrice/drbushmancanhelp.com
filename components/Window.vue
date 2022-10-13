@@ -1,5 +1,5 @@
 <template>
-  <div ref="popup" class="bg-white max-w-lg rounded-xl overflow-hidden transition fixed w-[500px] shadow-2xl z-40" :style="{ top: `${y}px`, left: `${x}px` }">
+  <div ref="popup" class="bg-white max-w-lg rounded-xl overflow-hidden transition fixed w-full desktop:w-[500px] shadow-2xl z-40" :style="{ top: `${y}px`, left: `${x}px` }">
     <header class="bg-gray-100 flex items-center space-x-2 p-2 cursor-move" @mousedown="isDragging = true">
       <div class="bg-red-500 aspect-square w-4" @click="$emit('close')"/>
       <div class="bg-yellow-500 aspect-square w-4"/>

@@ -1,7 +1,7 @@
 <template>
-  <div class="bg-blue-700 min-h-screen py-8">
+  <div class="bg-blue-700 min-h-screen py-8 px-2">
     <Transition name="zoom">
-      <div  v-if="!isOut" class="w-[1000px] mx-auto rounded-xl overflow-hidden shadow-2xl shadow-black">
+      <div  v-if="!isOut" class="w-full desktop:w-[1000px] mx-auto rounded-xl overflow-hidden shadow-2xl shadow-black">
         <div class="bg-gray-100 rounded-t-xl p-4 flex items-center space-x-4">
           <a class="aspect-square bg-red-500 shadow-xl w-8 block hover:bg-red-400" href="https://twitter.com/michaelpricenz"/>
           <div class="aspect-square bg-yellow-500 shadow-xl w-8"/>
@@ -20,10 +20,11 @@
       <img src="@/assets/img/dr/wave_up.png" alt="Dr. Bushman">
       <img src="@/assets/img/dr/wave_down.png" alt="Dr. Bushman">
       <img src="@/assets/img/face_is_longer_than_it_should_be.png" alt="Dr. Bushman Can Help">
+      <img src="@/assets/img/ok_stop_organisation.png" alt="Ok Stop!">
     </div>
 
     <div class="absolute bottom-2 right-2 text-white opacity-70" :class="{ 'hidden': !isOut }">
-      Website recreated by <a href="https://twitter.com/michaelpricenz" class="underline text-white">Michael Price</a>.
+      Bushman brought to life by <a href="https://twitter.com/michaelpricenz" class="underline text-white">Michael Price</a>.
     </div>
 
     <Ok-Stop />

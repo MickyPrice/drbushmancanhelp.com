@@ -57,23 +57,23 @@
 
     <header class="p-1 flex justify-between items-center">
       <div>
-        <h1 class="capitalize text-8xl p-1 pr-4 bg-blue-700 mb-2 text-teal-300 w-fit shadow-2xl">
+        <h1 class="capitalize text-6xl desktop:text-8xl p-1 pr-4 bg-blue-700 mb-2 text-teal-300 w-fit shadow-2xl">
           <span class="drop-shadow-2xl">
             Dr. Bushman
           </span>
         </h1>
-        <h2 class="capitalize text-5xl p-1 pr-4 bg-blue-700 mb-2 text-black w-fit shadow-2xl">
+        <h2 class="capitalize text-2xl desktop:text-5xl p-1 pr-4 bg-blue-700 mb-2 text-black w-fit shadow-2xl">
           <span class="drop-shadow-2xl">
             Dr Bushman Can Help!
           </span>
         </h2>
       </div>
-      <div class="pr-4">
+      <div class="pr-4 hidden desktop:block">
         <img src="@/assets/img/face_is_longer_than_it_should_be.png" alt="Dr. Bushman Can Help" class="w-48 drop-shadow-2xl select-none pointer-events-none">
       </div>
     </header>
 
-    <div class="grid grid-cols-2 gap-4">
+    <div class="grid desktop:grid-cols-2 gap-4">
 
       <section class="col-span-1 p-6">
         <Testimonials v-if="showTestimonials" />
