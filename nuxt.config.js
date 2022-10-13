@@ -12,7 +12,17 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }      
+      { name: 'format-detection', content: 'telephone=no' },
+
+      { hid: 'og-type', property: 'og:type', content: 'website' },
+      { hid: 'og-title', property: 'og:title', content: 'Dr Bushman Can Help' },
+      { hid: 'og-desc', property: 'og:description', content: 'Have a friend with a face longer than it should be? Dr Bushman Can Help!' },
+      { hid: 'og-image', property: 'og:image',
+        content: 'https://www.drbushmancanhelp.com/dr_bushman_can_help_social_image.png'
+      },
+      { hid: 'og-url', property: 'og:url', content: 'https://www.drbushmancanhelp.com' },
+      { hid: 'author', content: 'Michael Price - michaelprice.co.nz' },
+      { hid: 't-type', name: 'twitter:card', content: 'summary_large_image' },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
