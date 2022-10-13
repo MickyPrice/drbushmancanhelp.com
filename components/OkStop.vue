@@ -7,6 +7,7 @@
         </Transition>
       </div>
     </div>
+    <audio ref="audio" src="/mp3/ok_stop.mp3" />
   </div>
 </template>
 
@@ -27,11 +28,16 @@ export default {
   watch: {
     isStopped(v) {
       if (v) {
+        // this.$refs.audio?.currentTime = 0
+        setTimeout(() => {
+          this.$refs.audio.play()
+        }, 10)
         setTimeout(() => {
           this.logoShown = true
         }, 200)
       } else {
         this.logoShown = false
+        this.$refs.audio.pause()
       }
     }
   },
