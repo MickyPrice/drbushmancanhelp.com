@@ -26,6 +26,8 @@
       Website recreated by <a href="https://twitter.com/michaelpricenz" class="underline text-white">Michael Price</a>.
     </div>
 
+    <Ok-Stop />
+
   </div>
 </template>
 

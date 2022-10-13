@@ -36,16 +36,16 @@
       <Transition name="zoom" @after-leave="welcomeWrapper = false">
       <div v-if="welcome" class="bg-white max-w-lg rounded-xl overflow-hidden">
         <header class="bg-gray-100 flex items-center space-x-2 p-2">
-          <div class="bg-red-500 aspect-square w-4"/>
+          <button class="bg-red-500 aspect-square w-4 hover:bg-red-400" @click="setStopped(true)"/>
           <div class="bg-yellow-500 aspect-square w-4"/>
         </header>
         <div class="text-center p-4">
           <p class="text-2xl bg-blue-700 text-teal-300 w-fit p-1 mx-auto">Welcome to Dr. Bushman MD</p>
           <p class="text-lg bg-blue-700 text-black w-fit p-1 mt-1 mx-auto">Please accept the following:</p>
           <ul class="my-4">
-            <li class="underline my-1">Dr. Bushman does not claim to be a licensed doctor</li>
-            <li class="underline my-1">Dr. Bushman only offers opinions, not true diagnosis</li>
-            <li class="underline my-1">Dr. Bushman holds no liability to your health after appointment</li>
+            <li class="my-1">Dr. Bushman does not claim to be a licensed doctor</li>
+            <li class="my-1">Dr. Bushman only offers opinions, not true diagnosis</li>
+            <li class="my-1">Dr. Bushman holds no liability to your health after appointment</li>
           </ul>
           <button class="mx-auto block w-fit bg-blue-500 text-black px-4 py-2 hover:text-white shadow-2xl transition active:scale-95" @click="startTrack(1)">
             I accept
@@ -98,7 +98,8 @@
 </template>
 
 <script>
-import { addDoc, collection } from "firebase/firestore"; 
+import { addDoc, collection } from "firebase/firestore";
+import { mapActions } from "vuex";
 
 export default {
   data() {
@@ -122,6 +123,9 @@ export default {
     }
   },
   methods: {
+    ...mapActions({
+      setStopped: 'setStopped'
+    }),
     tickListItem(option) {
       if (option === 'Breathing' && this.currentTrackNo === 4 && !this.tickedListItems.includes("Breathing")) {
         this.startTrack(5)

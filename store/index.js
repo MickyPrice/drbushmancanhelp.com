@@ -1,22 +1,31 @@
 export const state = () => ({
-  isOut: false
+  isOut: false,
+  isStopped: false
 })
 
 export const getters = {
   isOut(state) {
     return state.isOut
+  },
+  isStopped(state) {
+    return state.isStopped
   }
 }
 
 export const mutations = {
   setState(state) {
     state.isOut = true
+  },
+  setStopped(state, value) {
+    state.isStopped = value
   }
 }
 
 export const actions = {
-  setOut({ state, commit }) {
+  setOut({ commit }) {
     commit('setState')
-    // state.isOut = false;
+  },
+  setStopped({ commit }, val) {
+    commit('setStopped', val)
   }
 }
