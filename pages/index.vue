@@ -264,7 +264,9 @@ export default {
                 this.$store.dispatch('setOut')
               })
             } else {
-              this.$store.dispatch('setOut')
+              setTimeout(() => {
+                this.$store.dispatch('setOut')
+              }, 500)
             }
           }, 100)
           break;
